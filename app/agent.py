@@ -19,9 +19,9 @@ def create_agent():
         tools=tools,
         llm=llm,
         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-        verbose=True,
-        max_iterations=3,
-        exearly_stopping_method="generate"
+        verbose=True
+        # max_iterations=3,
+        # exearly_stopping_method="generate"
     )
 
     return agent
