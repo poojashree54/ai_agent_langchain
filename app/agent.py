@@ -21,7 +21,8 @@ def create_agent():
         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
         verbose=True,
         max_iterations=3,
-        early_stopping_method="generate"
+        early_stopping_method="generate",
+        handle_parsing_errors=True
     )
 
     return agent
