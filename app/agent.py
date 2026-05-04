@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from langchain_groq import ChatGroq
 from langchain.agents import initialize_agent, AgentType
-from app.tools import calculator ✅
+from app.tools import calculator
 
 load_dotenv()
 
