@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from langchain_groq import ChatGroq
 from langchain.agents import initialize_agent, AgentType
-from tools import calculator
+from app.tools import calculator ✅
 
 load_dotenv()
 
@@ -21,7 +21,7 @@ def create_agent():
         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
         verbose=True,
         max_iterations=3,
-        early_stopping_method="generate"
+        exearly_stopping_method="generate"
     )
 
     return agent
